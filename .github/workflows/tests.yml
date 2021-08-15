@@ -20,9 +20,9 @@ jobs:
         with:
           ruby-version: 2.5.3
           bundler-cache: true
-      - name: YARN
+      - name: Yarn
         uses: bahmutov/npm-install@v1
         with:
           install-command: yarn --frozen-lockfile --silent
-      - name: Unit tests
+      - name: Tests
         run: bundle exec rails spec
