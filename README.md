@@ -5,20 +5,23 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+## Ruby version
 
-* System dependencies
+2.5.3 (we should use 2.7.4)
 
-* Configuration
+## System dependencies
 
-* Database creation
+Ruby
+NodeJS (version 14 ideally if webpack complains about something)
 
-* Database initialization
+## Configuration
 
-* How to run the test suite
+Copy `config/database.yml.sample` as `config/database.yml` and set up the database
 
-* Services (job queues, cache servers, search engines, etc.)
+## Database creation
 
-* Deployment instructions
+Run `rails db:setup`. This will create the databases, run migrations and seeds.
 
-* ...
+## How to run the test suite
+
+Run `rails spec`.
