@@ -25,4 +25,4 @@ jobs:
         with:
           install-command: yarn --frozen-lockfile --silent
       - name: Unit tests
-        run: rails spec
+        run: bundle exec rails spec
