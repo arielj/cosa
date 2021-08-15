@@ -18,7 +18,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.5
+          ruby-version: 2.5.3
           bundler-cache: true
       - name: YARN
         uses: bahmutov/npm-install@v1
