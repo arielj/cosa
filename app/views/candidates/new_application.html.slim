@@ -1,0 +1,25 @@
+h1 Apply to some position 
+
+= form_for @candidate, url: apply_path, method: :post do |f|
+  .field
+    = f.label :name
+    = f.text_field :name, required: true
+    - if @candidate.errors[:name].any?
+      .errors= @candidate.errors[:name]
+  .field
+    = f.label :lastname
+    = f.text_field :lastname, required: true
+    - if @candidate.errors[:lastname].any?
+      .errors= @candidate.errors[:lastname]
+  .field
+    = f.label :email
+    = f.email_field :email, required: true
+    - if @candidate.errors[:email].any?
+        .errors= @candidate.errors[:email]
+  .field
+    = f.label :location, "Location or timezone"
+    = f.text_field :location, required: true
+    - if @candidate.errors[:location].any?
+      .errors= @candidate.errors[:location]
+
+  = f.submit "Apply"
