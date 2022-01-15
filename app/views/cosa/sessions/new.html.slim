@@ -1,0 +1,3 @@
+= button_to "login with github", "/auth/github"
+- unless Rails.env.production?
+  = button_to "login with developer", "/auth/developer"

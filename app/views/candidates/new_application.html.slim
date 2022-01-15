@@ -7,10 +7,10 @@ h1 Apply to some position
     - if @candidate.errors[:name].any?
       .errors= @candidate.errors[:name]
   .field
-    = f.label :lastname
-    = f.text_field :lastname, required: true
-    - if @candidate.errors[:lastname].any?
-      .errors= @candidate.errors[:lastname]
+    = f.label :last_name
+    = f.text_field :last_name, required: true
+    - if @candidate.errors[:last_name].any?
+      .errors= @candidate.errors[:last_name]
   .field
     = f.label :email
     = f.email_field :email, required: true
