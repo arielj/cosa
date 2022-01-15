@@ -1,3 +1,3 @@
 class Candidate < ApplicationRecord
-  validates :name, :lastname, :location, :email, presence: true
+  validates :name, :last_name, :location, :email, presence: true
 end
